@@ -1,0 +1,21 @@
+.header {
+    border: solid 2px black;
+    height: 10vh;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        .left{
+            background: palegreen;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .right{
+            background: paleturquoise;
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+    }
+}

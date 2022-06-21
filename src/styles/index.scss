@@ -1,0 +1,27 @@
+/* Import fonts
+@link https://fonts.google.com 
+*/
+
+/* Breakpoints vars */
+@import './breakpoints';
+
+/* Colors vars*/
+@import './vars';
+
+/* Components styles */
+@import '../components/App/app';
+@import '../components/Header/header';
+@import '../components/Header/Burger/burger';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  color: red;
+}
+
+/* Upgrade */
+
+*{
+  box-sizing: border-box;
+}
