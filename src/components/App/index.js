@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 /* Locals import */
 import Header from '../Header/index';
 import Home from '../Home/index';
+import Hexagrid from '../Hexagrid';
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         {/* General Route */}
         <Route path='/' element={<Home />} />
+        <Route path='/hexagrid' element={<Hexagrid />} />
       </Routes>
     </div>
   )

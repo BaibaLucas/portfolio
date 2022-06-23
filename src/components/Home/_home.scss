@@ -1,19 +1,20 @@
 .home {
-    background-color: $darkgrey;
     height: 100%;
+    width: 100%;
     .container{
-        height: 100%;
-        .presentation{
-            height: calc(100vh - 10vh);
-            border: 2px black solid;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        position: relative;
+        .presentation {
             .whois{
+                z-index: 0;
+                align-self: center;
                 font-size: 3rem;
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                transform: translateX(-50%);
+                pointer-events: none;
                 .sub{
+                    color: white;
                     font-size: 1.3rem;
                 }
                 .title{
@@ -22,6 +23,7 @@
                     color: $orange;
                 }
                 .whatis{
+                    color: white;
 
                 }
             }
@@ -34,15 +36,28 @@
         }
         .portfolio{
             height: 100vh;
-            border: 2px black solid;
+            border: 2px $orange solid;
+            width: 100%;
         }
         .galery{
             height: 100vh;
-            border: 2px black solid;
         }
         .contact{
             height: 100vh;
-            border: 2px black solid;
+            border: 2px $orange solid;
+            display: flex;
+            flex-direction: column;
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                input{
+                    width: 80%;
+                }
+                textarea{
+                    width: 80%;
+                }
+            }
         }
     }
 }

@@ -1,7 +1,10 @@
 .header {
-    border: solid 2px $orange;
+    position: sticky;
+    z-index:2;
+    top: 0;
     background-color: $darkgrey;
     height: 10vh;
+    width: 100%;
     .container {
         display: flex;
         justify-content: space-between;

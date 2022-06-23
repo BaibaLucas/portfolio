@@ -1,13 +1,16 @@
 /* Packages import */
 import React from 'react';
 /* Locals import */
+import Hexagrid from '../Hexagrid';
 
 
 const Home = () => {
 
   return (
+    <>
     <div className='home'>
         <div className='container'>
+        <Hexagrid />
             <div className='presentation'>
                 <div className='whois'>
                     <div className='sub'>
@@ -19,12 +22,12 @@ const Home = () => {
                     <div className='whatis'>
                     I'm a full-stack <br></br> web developer.
                     </div>
-                </div>
-                <div className='button'>
+                    <div className='button'>
                     View my work
                 </div>
+                </div>
             </div>
-            <div className='portfolio'>
+            {/* <div className='portfolio'>
                 <div className='title'>
                     <h1>What's this ?</h1>
                 </div>
@@ -47,9 +50,10 @@ const Home = () => {
                     <input name='subject' placeholder='Subject'/>
                     <textarea name='message' placeholder='Message'/>
                 </form>
-            </div>
+            </div> */}
             </div>
         </div>
+    </>
   )
 }
 
