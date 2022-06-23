@@ -1,0 +1,48 @@
+.home {
+    background-color: $darkgrey;
+    height: 100%;
+    .container{
+        height: 100%;
+        .presentation{
+            height: calc(100vh - 10vh);
+            border: 2px black solid;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .whois{
+                font-size: 3rem;
+                .sub{
+                    font-size: 1.3rem;
+                }
+                .title{
+                    font-size: 3rem;
+                    font-weight: bold;
+                    color: $orange;
+                }
+                .whatis{
+
+                }
+            }
+            .button {
+                border: solid 2px $orange;
+                padding: 1rem;
+                margin: 1rem;
+                color: $orange;
+            }
+        }
+        .portfolio{
+            height: 100vh;
+            border: 2px black solid;
+        }
+        .galery{
+            height: 100vh;
+            border: 2px black solid;
+        }
+        .contact{
+            height: 100vh;
+            border: 2px black solid;
+        }
+    }
+}

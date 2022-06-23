@@ -12,16 +12,20 @@
 @import '../components/App/app';
 @import '../components/Header/header';
 @import '../components/Header/Burger/burger';
+@import '../components/Home/home';
 
 html,
 body {
   height: 100%;
   width: 100%;
-  color: red;
 }
 
 /* Upgrade */
 
+h1{
+  font-weight: bold;
+  font-size: 2rem;
+}
 *{
   box-sizing: border-box;
 }
