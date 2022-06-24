@@ -29,15 +29,51 @@
             }
             .button {
                 border: solid 2px $orange;
-                padding: 1rem;
+                font-size: 2rem;
+                padding: 0.5rem;
                 margin: 1rem;
                 color: $orange;
+                text-align: center;
+                width: 70vw;
             }
         }
         .portfolio{
-            height: 100vh;
             border: 2px $orange solid;
             width: 100%;
+            background-color: $darkgrey;
+            height: 100%;
+            padding: 1rem;
+            .title{
+                color: $orange;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 1rem 0rem;
+            }
+            .desc{
+                color: white;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                margin: 1rem 0rem;
+            }
+            .technoanimation {
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                .prompt-wrapper {
+                    position: relative;
+                    padding-top: 10px;
+                    height: 100%;
+                }
+                .typing {
+                    margin: 1rem;
+                    color: white;
+                    background-color: $orange;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    padding: 1rem;
+                    border-radius: 10px;
+                }
+            }
         }
         .galery{
             height: 100vh;

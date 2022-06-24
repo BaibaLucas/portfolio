@@ -14,7 +14,7 @@ const Header = () => {
     <div className='header'>
         <div className='container'>
             <div className='left'>
-                That's my Header
+                BL
             </div>
             <div className='right'>
                 <Burger open={open} setOpen={setOpen}/>

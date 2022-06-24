@@ -1,10 +1,18 @@
 /* Packages import */
-import React from 'react';
+import React, { useEffect } from 'react';
 /* Locals import */
 import Hexagrid from '../Hexagrid';
+import { technoAnime } from '../../utils';
+
+
+
 
 
 const Home = () => {
+
+useEffect(() => {
+    technoAnime(0, "#prompt")
+}, []);
 
   return (
     <>
@@ -27,12 +35,18 @@ const Home = () => {
                 </div>
                 </div>
             </div>
-            {/* <div className='portfolio'>
+            <div className='portfolio'>
                 <div className='title'>
-                    <h1>What's this ?</h1>
+                    <h1>About me</h1>
+                </div>
+                <div className='desc'>
+                    Hello, my name is Lucas and i'm a full-stack web developer. I started web devlopment in 2021. Here is my portfolio, you can find some information about me and my different web projects.
+                </div>
+                <div className='technoanimation'>
+                <div className="prompt-wrapper"><div id="prompt" className="typing">Hello</div></div>
                 </div>
             </div>
-            <div className='galery'>
+            {/* <div className='galery'>
                 <div className='title'>
                     <h1>Galery</h1>
                 </div>
