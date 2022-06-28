@@ -9,10 +9,14 @@
                 align-self: center;
                 font-size: 3rem;
                 position: absolute;
-                top: 25%;
+                top: 15%;
                 left: 50%;
                 transform: translateX(-50%);
                 pointer-events: none;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                margin: 1rem;
                 .sub{
                     color: white;
                     font-size: 1.3rem;
@@ -29,16 +33,15 @@
             }
             .button {
                 border: solid 2px $orange;
-                font-size: 2rem;
+                font-size: 1.5rem;
                 padding: 0.5rem;
-                margin: 1rem;
+                margin: 2rem;
                 color: $orange;
                 text-align: center;
-                width: 70vw;
+                width: 50vw;
             }
         }
         .portfolio{
-            border: 2px $orange solid;
             width: 100%;
             background-color: $darkgrey;
             height: 100%;
@@ -76,22 +79,85 @@
             }
         }
         .galery{
-            height: 100vh;
-        }
-        .contact{
-            height: 100vh;
-            border: 2px $orange solid;
-            display: flex;
-            flex-direction: column;
-            form{
+            height: 100%;
+            padding: 1rem;
+            background-color: $darkgrey;
+            .title{
+                color: $orange;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 1rem 0rem;
+            }
+            .container{
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                input{
-                    width: 80%;
+                height: 100%;
+                width: 100%;
+                .card{
+                    background-color: #ff813307;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    min-height: 30vh;
+                    margin: 1rem 0rem;
+                    padding: 0.5rem;
+                    color:white;
+                    &__image{
+                        position: absolute;
+                        z-index: 1;
+                        opacity: 0.1; 
+                    }
+                    &__title{
+                        color: $orange;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        margin: 1rem 0rem;
+                        z-index: 2;
+                    }
+                    &__desc{
+                        z-index: 2;
+                        line-height: 1.2rem;
+                    }
+                    &__techno{
+                        display: flex;
+                        color: $orange;
+                        justify-content: space-around;
+                        width: 100%;
+                        margin: 1rem 0rem;
+                        z-index: 2;
+                    }
+                    &__link{
+                        
+                    }
                 }
-                textarea{
-                    width: 80%;
+            }
+        }
+        .contact{
+            background-color: $darkgrey;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            color: white;
+            line-height: 1.2rem;
+            .title{
+                color: $orange;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 1rem 0rem;
+            }
+            .mailto{
+                margin: 1rem 0rem;
+                text-align: center;
+                color:white;
+                button{
+                    background-color: $orange;
+                    padding: 1rem;
+                    border: none;
+                    color: white;
+                    border-radius: 10px;
                 }
             }
         }

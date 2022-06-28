@@ -3,10 +3,7 @@ import React, { useEffect } from 'react';
 /* Locals import */
 import Hexagrid from '../Hexagrid';
 import { technoAnime } from '../../utils';
-
-
-
-
+import pawsclub from '../../assets/images/pawsclub.png';
 
 const Home = () => {
 
@@ -46,25 +43,40 @@ useEffect(() => {
                 <div className="prompt-wrapper"><div id="prompt" className="typing">Hello</div></div>
                 </div>
             </div>
-            {/* <div className='galery'>
+            <div className='galery'>
                 <div className='title'>
-                    <h1>Galery</h1>
+                    <h1>Featured projects</h1>
                 </div>
+                <div className='container'>
+                    <div className='card'>
+                        <img className='card__image' src={pawsclub} alt="pawsclub"></img>
+                        <div className='card__title'>PawsClub</div>
+                        <div className='card__desc'>Web platform gathering various information about the PawsClub multi-gaming. Display of the latest news, a user and admin dashboard.</div>
+                        <div className='card__techno'>
+                            <div>React</div>
+                            <div>Redux</div>
+                            <div>JwT</div>
+                            <div>Node Js</div>
+                            <div>Express</div>
+                            <div>AWS</div>
+                            <div>Nginx</div>
+                        </div>
+                        <div className='card__link'>Github repository</div>
+                    </div>      
+                </div>
+
             </div>
             <div className='contact'>
                 <div className='title'>
                     <h1>Contact</h1>
                 </div>
                 <div className='desc'>
-                    Ad deserunt do exercitation minim. Reprehenderit id elit ut aute cillum esse dolore veniam nostrud. Incididunt excepteur commodo laboris aliquip. Nisi aute duis sit do. Quis nulla laborum proident nisi est laborum fugiat amet magna est ullamco irure commodo. Elit nostrud officia fugiat duis commodo commodo ipsum labore tempor mollit velit occaecat esse.
+                    Currently looking for new opportunities, my inbox is open. If you need information do not hesitate, I will do my best to answer you.
                 </div>
-                <form>
-                    <input name='name' placeholder='Name'/>
-                    <input name='email' placeholder='Email'/>
-                    <input name='subject' placeholder='Subject'/>
-                    <textarea name='message' placeholder='Message'/>
-                </form>
-            </div> */}
+                <a className="mailto" href="mailto:baiba.lucas@gmail.com">
+                <button> Send Mail ! </button>
+                </a>
+            </div>
             </div>
         </div>
     </>
