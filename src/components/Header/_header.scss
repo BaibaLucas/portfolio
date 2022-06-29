@@ -17,10 +17,12 @@
             justify-content: center;
             margin-left: 1rem;
             font-weight: bold;
-            border: solid 2px $orange;
-            border-radius: 50%;
             width: 64px;
             height: 64px;
+            font-size: 3rem;
+            border: 2px solid $orange;
+            border-radius: 10px;
+            text-decoration: none;
         }
         .right{
             display: flex;

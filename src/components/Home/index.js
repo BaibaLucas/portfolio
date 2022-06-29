@@ -1,9 +1,10 @@
 /* Packages import */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 /* Locals import */
 import Hexagrid from '../Hexagrid';
 import { technoAnime } from '../../utils';
 import pawsclub from '../../assets/images/pawsclub.png';
+import Loader from '../Loader/index';
 
 const Home = () => {
 
@@ -11,11 +12,17 @@ useEffect(() => {
     technoAnime(0, "#prompt")
 }, []);
 
+const [loading, setLoading] = useState(false);
+
   return (
     <>
-    <div className='home'>
-        <div className='container'>
-        <Hexagrid />
+    {!loading && (
+        <Loader setLoading={setLoading}/>
+    )}
+    {loading && (
+        <div className='home'>
+            <div className='container'>
+            <Hexagrid />
             <div className='presentation'>
                 <div className='whois'>
                     <div className='sub'>
@@ -37,7 +44,7 @@ useEffect(() => {
                     <h1>About me</h1>
                 </div>
                 <div className='desc'>
-                    Hello, my name is Lucas and i'm a full-stack web developer. I started web devlopment in 2021. Here is my portfolio, you can find some information about me and my different web projects.
+                    Hello, my name is Lucas and i'm a full-stack web developer. I started web development in 2021. Here is my portfolio, you can find some information about me and my different web projects.
                 </div>
                 <div className='technoanimation'>
                 <div className="prompt-wrapper"><div id="prompt" className="typing">Hello</div></div>
@@ -79,6 +86,7 @@ useEffect(() => {
             </div>
             </div>
         </div>
+    )}
     </>
   )
 }

@@ -13,9 +13,9 @@ const Header = () => {
   return (
     <div className='header'>
         <div className='container'>
-            <div className='left'>
-                BL
-            </div>
+            <a className='left' href='/'>
+                L
+            </a>
             <div className='right'>
                 <Burger open={open} setOpen={setOpen}/>
             </div>

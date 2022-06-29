@@ -1,6 +1,7 @@
 /* Import fonts
 @link https://fonts.google.com 
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Breakpoints vars */
 @import './breakpoints';
@@ -14,9 +15,11 @@
 @import '../components/Header/Burger/burger';
 @import '../components/Home/home';
 @import '../components/Hexagrid/hexagrid';
+@import '../components/Loader/loader';
 
 html,
 body {
+  font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -31,4 +34,26 @@ h1{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+// CSS REACT TRANSITION GROUP
+.fade-enter {
+  opacity: 0;
+  transform: translate(0, 25px);
+  z-index: 1;
+}
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transform: translate(0, 0);
+
+  transition: opacity 250ms ease-out, transform 300ms ease;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transform: translate(0, 30px);
+  transition: opacity 250ms ease-out, transform 300ms ease;
 }
