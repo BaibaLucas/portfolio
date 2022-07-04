@@ -1,19 +1,21 @@
 /* Packages import */
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { FaExternalLinkAlt } from 'react-icons/fa';
+import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 /* Locals import */
 import Hexagrid from '../Hexagrid';
 import { technoAnime } from '../../utils';
 import pawsclub from '../../assets/images/pawsclub.png';
 import Loader from '../Loader/index';
+import github from '../../assets/images/githublogo1.png';
 
 const Home = () => {
 
-useEffect(() => {
-    technoAnime(0, "#prompt")
-}, []);
-
 const [loading, setLoading] = useState(false);
 
+if (loading === true) {
+    technoAnime(0, "#prompt");
+};
   return (
     <>
     {!loading && (
@@ -34,12 +36,14 @@ const [loading, setLoading] = useState(false);
                     <div className='whatis'>
                     I'm a full-stack <br></br> web developer.
                     </div>
-                    <div className='button'>
-                    View my work
-                </div>
+                    <a href="#work_section">
+                        <div className='button'>
+                            View my work
+                        </div>
+                    </a>
                 </div>
             </div>
-            <div className='portfolio'>
+            <div className='portfolio' id='about_section'>
                 <div className='title'>
                     <h1>About me</h1>
                 </div>
@@ -47,10 +51,12 @@ const [loading, setLoading] = useState(false);
                     Hello, my name is Lucas and i'm a full-stack web developer. I started web development in 2021. Here is my portfolio, you can find some information about me and my different web projects.
                 </div>
                 <div className='technoanimation'>
-                <div className="prompt-wrapper"><div id="prompt" className="typing">Hello</div></div>
+                    <div className="prompt-wrapper">
+                        <div id="prompt" className="typing">Hello</div>
+                    </div>
                 </div>
             </div>
-            <div className='galery'>
+            <div className='galery' id='work_section'>
                 <div className='title'>
                     <h1>Featured projects</h1>
                 </div>
@@ -68,12 +74,19 @@ const [loading, setLoading] = useState(false);
                             <div>AWS</div>
                             <div>Nginx</div>
                         </div>
-                        <div className='card__link'>Github repository</div>
-                    </div>      
+                        <div className='card__link'>
+                        <a href="https://github.com/BaibaLucas/PawsClub" target="_blank" rel="noreferrer">
+                        <img src={github} alt="github link"></img> 
+                        </a>
+                        <a href="https://pawsclub.fr/" target="_blank" rel="noreferrer">
+                        <FaExternalLinkAlt size={30}/>
+                        </a>
+                        </div>
+                    </div> 
                 </div>
 
             </div>
-            <div className='contact'>
+            <div className='contact' id='contact_section'>
                 <div className='title'>
                     <h1>Contact</h1>
                 </div>
@@ -83,6 +96,21 @@ const [loading, setLoading] = useState(false);
                 <a className="mailto" href="mailto:baiba.lucas@gmail.com">
                 <button> Send Mail ! </button>
                 </a>
+            </div>
+            <div className='footer'>
+                <div className='network'>
+                    <div className='git'>
+                        <a href="https://github.com/BaibaLucas" target="_blank" rel="noreferrer">
+                        <AiOutlineGithub size={35} color={'white'}/>
+                        </a>
+                    </div>
+                    <div className='linkedin'>
+                        <a href='https://www.linkedin.com/in/lucas-baiba/' target="_blank"
+                        rel="noreferrer">
+                        <AiOutlineLinkedin size={35} color={'white'}/>
+                        </a>
+                    </div>
+                </div>
             </div>
             </div>
         </div>

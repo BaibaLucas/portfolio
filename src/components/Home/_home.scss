@@ -14,32 +14,39 @@
                 transform: translateX(-50%);
                 pointer-events: none;
                 width: 80%;
+                margin: 1rem;
                 display: flex;
                 flex-direction: column;
-                margin: 1rem;
+                justify-content: center;
                 .sub{
+                    align-self:flex-start;
                     color: white;
                     font-size: 1.3rem;
                 }
                 .title{
+                    align-self:flex-start;
                     font-size: 3rem;
                     font-weight: bold;
                     color: $orange;
                 }
                 .whatis{
                     color: white;
-
                 }
             }
-            .button {
-                border: solid 2px $orange;
-                font-size: 1.5rem;
-                padding: 0.5rem;
-                margin: 2rem;
+            a{
+                pointer-events: visible;
+                text-decoration: none;
                 color: $orange;
-                text-align: center;
-                width: 50vw;
+                .button {
+                    border: solid 2px $orange;
+                    font-size: 1.5rem;
+                    padding: 0.5rem;
+                    margin: 2rem;
+                    text-align: center;
+                    width: 50%; 
+                }
             }
+            
         }
         .portfolio{
             width: 100%;
@@ -95,6 +102,10 @@
                 align-items: center;
                 height: 100%;
                 width: 100%;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
                 .card{
                     background-color: #ff813307;
                     display: flex;
@@ -130,7 +141,11 @@
                         z-index: 2;
                     }
                     &__link{
-                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 15vh;
+                        z-index: 2;
                     }
                 }
             }
@@ -159,6 +174,18 @@
                     color: white;
                     border-radius: 10px;
                 }
+            }
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0rem;
+            .network{
+                text-align: center;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 10vh;
             }
         }
     }

@@ -12,9 +12,9 @@ export const technoAnime = (index, div) => {
         const qs = document.querySelector(div);
         if (index < array.length) {
             qs.textContent = array[index];
-            setTimeout(() => technoAnime(index + 1, div), 2500);
+            setTimeout(() => technoAnime(index + 1, div), 2000);
         } else {
-            setTimeout(() => technoAnime(0, div), 2500);
+            setTimeout(() => technoAnime(0, div), 2000);
         }
-    }, 2500);
+    }, 2000);
 };

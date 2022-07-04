@@ -8,10 +8,10 @@ import React from 'react';
 const Burger = ({ open, setOpen }) => {
 
   const closeMenu = () => {
-    setOpen(!open);
-    console.log(open);
+      setOpen(!open);
   };
 
+  
   return(
     <div
       className='burger'
