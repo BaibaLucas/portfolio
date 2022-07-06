@@ -29,7 +29,7 @@ if (loading === true) {
     )}
     {loading && (
         <div className='home'>
-            <div className='container'>
+            <div className='homecontainer'>
             <Hexagrid />
             <div className='presentation'>
                 <div className='whois'>
@@ -50,6 +50,7 @@ if (loading === true) {
                 </div>
                 <div className="arrow"></div>
             </div>
+            <div className='content'>
             <div className='portfolio section fadeOut' id='about_section'>
                 <div className='title'>
                     <h1>About me</h1>
@@ -103,6 +104,7 @@ if (loading === true) {
                 <a className="mailto" href="mailto:baiba.lucas@gmail.com">
                 <button> Send Mail ! </button>
                 </a>
+            </div>
             </div>
             <div className='footer'>
                 <div className='network'>
