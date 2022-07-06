@@ -1,5 +1,5 @@
 /* Packages import */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaExternalLinkAlt } from 'react-icons/fa';
 import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 /* Locals import */
@@ -8,14 +8,20 @@ import { technoAnime } from '../../utils';
 import pawsclub from '../../assets/images/pawsclub.png';
 import Loader from '../Loader/index';
 import github from '../../assets/images/githublogo1.png';
+import { fade } from '../../utils';
 
 const Home = () => {
 
 const [loading, setLoading] = useState(false);
 
+useEffect(() => {
+    fade();
+}, [loading]);
+
 if (loading === true) {
     technoAnime(0, "#prompt");
 };
+
   return (
     <>
     {!loading && (
@@ -42,8 +48,9 @@ if (loading === true) {
                         </div>
                     </a>
                 </div>
+                <div className="arrow"></div>
             </div>
-            <div className='portfolio' id='about_section'>
+            <div className='portfolio section fadeOut' id='about_section'>
                 <div className='title'>
                     <h1>About me</h1>
                 </div>
@@ -56,7 +63,7 @@ if (loading === true) {
                     </div>
                 </div>
             </div>
-            <div className='galery' id='work_section'>
+            <div className='galery section fadeOut' id='work_section'>
                 <div className='title'>
                     <h1>Featured projects</h1>
                 </div>
@@ -64,7 +71,7 @@ if (loading === true) {
                     <div className='card'>
                         <img className='card__image' src={pawsclub} alt="pawsclub"></img>
                         <div className='card__title'>PawsClub</div>
-                        <div className='card__desc'>Web platform gathering various information about the PawsClub multi-gaming. Display of the latest news, a user and admin dashboard.</div>
+                        <div className='card__desc'>Web platform gathering various information about the PawsClub multi-gaming. Display of the latest news with user and admin dashboard.</div>
                         <div className='card__techno'>
                             <div>React</div>
                             <div>Redux</div>
@@ -86,7 +93,7 @@ if (loading === true) {
                 </div>
 
             </div>
-            <div className='contact' id='contact_section'>
+            <div className='contact section fadeOut' id='contact_section'>
                 <div className='title'>
                     <h1>Contact</h1>
                 </div>
