@@ -7,6 +7,10 @@
             transition: opacity 0.7s ease-in;
         }
         .presentation {
+            @include media('>phone', '<=tablet'){
+              };
+            @include media('>tablet'){
+            };
             .whois{
                 z-index: 0;
                 align-self: center;
@@ -47,6 +51,12 @@
                     margin: 2rem 0rem;
                     text-align: center;
                     width: 50%; 
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: #ef6a173e;
+                        border-radius: 10px;
+                        transition: 0.3s;
+                    }
                 }
             }
             .arrow{
@@ -96,7 +106,10 @@
             width: 100%;
             background-color: $darkgrey;
             height: 100%;
-            padding: 1rem;
+            padding: 0rem 1rem;
+            @include media('>tablet'){
+            padding: 1rem 5rem;
+            };
             .title{
                 color: $orange;
                 font-weight: bold;
@@ -133,6 +146,10 @@
             height: 100%;
             padding: 1rem;
             background-color: $darkgrey;
+            padding: 0rem 1rem;
+            @include media('>tablet'){
+                padding: 1rem 5rem;
+            };
             .title{
                 color: $orange;
                 font-weight: bold;
@@ -160,6 +177,9 @@
                     margin: 1rem 0rem;
                     padding: 0.5rem;
                     color:white;
+                    @include media('>tablet'){
+                        padding: 1rem 5rem;
+                    };
                     &__image{
                         position: absolute;
                         z-index: 1;
@@ -201,6 +221,9 @@
             padding: 1rem;
             color: white;
             line-height: 1.2rem;
+            @include media('>tablet'){
+                padding: 1rem 5rem;
+            };
             .title{
                 color: $orange;
                 font-weight: bold;
@@ -213,10 +236,13 @@
                 color:white;
                 button{
                     background-color: $orange;
+                    margin: 1rem;
                     padding: 1rem;
                     border: none;
                     color: white;
                     border-radius: 10px;
+                    font-size: 1.3rem;
+                    cursor: pointer;
                 }
             }
         }
@@ -224,12 +250,31 @@
             display: flex;
             justify-content: center;
             padding: 1rem 0rem;
+            @include media('>tablet'){
+                position: fixed;
+                z-index: 3;
+                top: 80%;
+                left: 0;
+            };
             .network{
                 text-align: center;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 width: 10vh;
+                @include media('>tablet'){
+                    display: flex;
+                    flex-direction: column;
+                };
+                div{
+                    &:hover{
+                        background-color: #ef6a173e;
+                        margin: 0.3rem;
+                        padding: 0.3rem;
+                        border-radius: 10px;
+                        transition: 0.3s;
+                    }
+                }  
             }
         }
     }

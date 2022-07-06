@@ -7,7 +7,7 @@ import React from 'react';
 const Menu = ({ open, setOpen}) => {
 
     const close = () => {
-        setOpen(!open);
+        setOpen(false);
       };
 
     return (
