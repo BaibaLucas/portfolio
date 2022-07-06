@@ -1,11 +1,13 @@
 .hexagrid{
     z-index: 1;
     background-color: $darkgrey;
+    width: 100%;
     .container{
         position: relative;
         overflow: hidden;
         height: calc(100vh - 10vh);
         animation: animate 4s linear infinite;
+        width: 100;
     }
     @keyframes animate{
         0%{
