@@ -30,8 +30,8 @@ if (loading === true) {
     {loading && (
         <div className='home'>
             <div className='homecontainer'>
-            <Hexagrid />
             <div className='presentation'>
+            <Hexagrid />
                 <div className='whois'>
                     <div className='sub'>
                         Hi, my name is
