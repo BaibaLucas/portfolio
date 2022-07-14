@@ -5,8 +5,7 @@ import { TransitionGroup, CSSTransition} from "react-transition-group";
 /* Locals import */
 import Header from '../Header/index';
 import Home from '../Home/index';
-import Hexagrid from '../Hexagrid';
-import Loader from '../Loader';
+import Game from '../Game/index';
 
 const App = () => {
   const location = useLocation();
@@ -20,9 +19,7 @@ const App = () => {
             <Routes location={location}>
               {/* General Route */}
               <Route path='/' element={<Home />} />
-              <Route path='/hexagrid' element={<Hexagrid />} />
-              <Route path='/loader'
-              element={<Loader />} />
+              <Route path='/game' element={<Game />} />
             </Routes>
         </div>
         </CSSTransition>

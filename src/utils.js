@@ -1,4 +1,5 @@
 /* Hooks / Functions */
+import { useEffect } from 'react';
 
 /**
  * technoAnime() function to display different words from an array with setTimeout
@@ -46,4 +47,23 @@ export const fade = () => {
     const observer = new IntersectionObserver(observerCallBack, observerOptions);
     const fadeElms = document.querySelectorAll('.section');
     fadeElms.forEach(el => observer.observe(el));
+};
+
+/**
+ * Hooks for adding script tag into react/jsx
+ */
+
+export const useScript = url => {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = "text/babel";
+        script.src = url;
+        script.async = true;
+
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        }
+    }, [url]);
 };

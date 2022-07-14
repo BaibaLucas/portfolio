@@ -1,0 +1,18 @@
+.game{
+    height: calc(100vh - 10vh);
+    .gameContainer{
+        background: url('./background.jpg');
+        width: 100vw;
+        height: calc(100vh - 10vh);
+        canvas{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #collisionCanvas {
+            opacity: 0;
+        }
+    }
+}
