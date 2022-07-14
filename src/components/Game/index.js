@@ -115,9 +115,9 @@ const Game = () => {
         // Display Score
         function drawScore(){
             ctx.fillStyle = 'black';
-            ctx.fillText('Score: ' + score, 50, 75);
+            ctx.fillText('Score: ' + score, 70, 130);
             ctx.fillStyle = 'white';
-            ctx.fillText('Score: ' + score, 55, 80);
+            ctx.fillText('Score: ' + score, 75, 135);
         }
 
         // loose function : play sound + onClick refresh page for retry

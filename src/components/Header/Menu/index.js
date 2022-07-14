@@ -15,13 +15,13 @@ const Menu = ({ open, setOpen}) => {
             <div className='background'></div>
             <nav className='navigation'>
                 <ul className='list'>
-                    <a href='#about_section' onClick={close}>
+                    <a href='/#about_section' onClick={close}>
                     <li className='item'>About</li>
                     </a>
-                    <a href='#work_section'>
+                    <a href='/#work_section'>
                     <li className='item' onClick={close}>Work</li>
                     </a>
-                    <a href='#contact_section'>
+                    <a href='/#contact_section'>
                     <li className='item' onClick={close}>Contact</li>
                     </a>
                 </ul>

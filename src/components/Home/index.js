@@ -8,6 +8,7 @@ import { technoAnime } from '../../utils';
 import pawsclub from '../../assets/images/pawsclub.png';
 import Loader from '../Loader/index';
 import github from '../../assets/images/githublogo1.png';
+import raven from '../../assets/images/ravenlogo.png';
 import { fade } from '../../utils';
 
 const Home = () => {
@@ -87,6 +88,23 @@ if (loading === true) {
                         <img src={github} alt="github link"></img> 
                         </a>
                         <a href="https://pawsclub.fr/" target="_blank" rel="noreferrer">
+                        <FaExternalLinkAlt size={30}/>
+                        </a>
+                        </div>
+                    </div>
+                    <div className='card'>
+                        <img className='card__image' src={raven} alt="ravenlogo"></img>
+                        <div className='card__title'>Raven's kill</div>
+                        <div className='card__desc'>Shooting games in javascript, the objective is to kill crows in order to earn as many points as possible.</div>
+                        <div className='card__techno'>
+                            <div>JavaScript</div>
+                            <div>Sass</div>
+                        </div>
+                        <div className='card__link'>
+                        <a href="https://github.com/BaibaLucas/shooter-game" target="_blank" rel="noreferrer">
+                        <img src={github} alt="github link"></img> 
+                        </a>
+                        <a href="/game" target="_blank" rel="noreferrer">
                         <FaExternalLinkAlt size={30}/>
                         </a>
                         </div>
