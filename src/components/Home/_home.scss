@@ -126,8 +126,6 @@
             padding: 1rem 5rem;
             };
             @include media('>desktop'){
-                
-
             };
             .title{
                 color: $orange;
@@ -197,6 +195,7 @@
                     margin: 1rem 0rem;
                     padding: 0.5rem;
                     color:white;
+                    width: 100%;
                     @include media('>tablet'){
                         padding: 1rem 5rem;
                     };

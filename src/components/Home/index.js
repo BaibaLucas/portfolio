@@ -6,6 +6,7 @@ import { AiOutlineLinkedin, AiOutlineGithub } from 'react-icons/ai';
 import Hexagrid from '../Hexagrid';
 import { technoAnime } from '../../utils';
 import pawsclub from '../../assets/images/pawsclub.png';
+import dauntingtlk from '../../assets/images/dauntingtlk.png';
 import Loader from '../Loader/index';
 import github from '../../assets/images/githublogo1.png';
 import raven from '../../assets/images/ravenlogo.png';
@@ -88,6 +89,25 @@ if (loading === true) {
                         <img src={github} alt="github link"></img> 
                         </a>
                         <a href="https://pawsclub.fr/" target="_blank" rel="noreferrer">
+                        <FaExternalLinkAlt size={30}/>
+                        </a>
+                        </div>
+                    </div>
+                    <div className='card'>
+                        <img className='card__image' src={dauntingtlk} alt="Daunting"></img>
+                        <div className='card__title'>Daunting</div>
+                        <div className='card__desc'>Web platform gathering various information about the Daunting gaming community. Display of the latest news.</div>
+                        <div className='card__techno'>
+                            <div>React</div>
+                            <div>AWS</div>
+                            <div>Nginx</div>
+                            <div>Sass</div>
+                        </div>
+                        <div className='card__link'>
+                        <a href="https://github.com/BaibaLucas/Daunting" target="_blank" rel="noreferrer">
+                        <img src={github} alt="github link"></img> 
+                        </a>
+                        <a href="https://daunting.fr/" target="_blank" rel="noreferrer">
                         <FaExternalLinkAlt size={30}/>
                         </a>
                         </div>
